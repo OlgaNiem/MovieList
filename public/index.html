@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Movies</title>
+</head>
+<body>
+    <div class="container">
+        <input type="text" placeholder="Search ..." class="filter-input">
+        <div class="output"></div>
+    </div>
+    <div class="container">
+        <input type="text" placeholder="min" class="filter2">
+        <input type="text" placeholder="max" class="filter">
+        <button id="max" onclick="filterByRating()">filter</button>
+        <div class="max"></div>
+    </div>
+    
+    <form method="post" action="/api/movies">
+        <table id="movies">
+           <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Year</th>
+                    <th>Age rating</th>
+                    <th onclick="filterByGenre(event)">Genre</th>
+                    <th>Rating</th>
+                </tr>
+            </thead>
+        </table>
+    </form>
+
+    <script src="app.js"></script>
+</body>
+</html>
