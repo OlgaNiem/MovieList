@@ -56,7 +56,7 @@ h3{
     font-size: 18px;
     text-align: left;
 }
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 800px) {
     #leftPart{
         position: relative;
         width: auto;
