@@ -19,10 +19,26 @@ input{
     display: block;
     width: 100%;
     padding: 0.5rem;
+    margin-bottom: 0.5rem;
     box-sizing: border-box;
-    border-radius: var(--border-radius);
     border: 1px solid #dddddd;
     outline: none;
+}
+#btn {
+    font: inherit;
+    padding: 5px 10px;
+    margin: 0 auto;
+    font-size: 15px;
+    text-align: center;
+    cursor: pointer;
+    background-color:#ccc;
+    border: 1px solid #dddddd;
+    border: none;
+}
+#btn:hover{
+    background-color:rgb(116, 115, 115);
+    color:white;
+    border: 1px solid #dddddd;
 }
 table{
     border-spacing: 0;

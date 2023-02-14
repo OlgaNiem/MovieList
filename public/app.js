@@ -3,10 +3,7 @@ const tbody = document.createElement('tbody');
 
 fetchMovies();
 
-
-
 function updateMovies(data){
- 
     tbody.innerHTML = '';
     table.append(tbody);
     
@@ -55,7 +52,6 @@ async function fetchMovies() {
     const response = await fetch('/api/movies');
     const data = await response.json();
         
-    
     table.append(tbody);
     
     data.forEach(item => {
